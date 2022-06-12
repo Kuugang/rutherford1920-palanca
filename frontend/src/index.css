@@ -23,6 +23,8 @@ h1, h2, h3, p{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('../public/rutherford.jpg');
+  background-repeat: round;
 }
 
 .form{
@@ -31,6 +33,12 @@ h1, h2, h3, p{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;            
   border-radius: 10px;
   background-color: white;
+  opacity: 0.1;
+  transition: opacity 0.5s ease;
+}
+
+.form:hover{
+  opacity: 1;  
 }
 
 .form h1{
@@ -80,7 +88,7 @@ input:focus, textarea:focus{
   box-shadow: 1px 2px 0px 0px #09c6f9;
 }
 
-.create textarea {
+textarea {
   max-width: 100%;
   width: 100%;
 }
@@ -126,6 +134,10 @@ input:focus, textarea:focus{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.backdrop h3{
+  font-size: 3rem;
 }
 
 .messages{

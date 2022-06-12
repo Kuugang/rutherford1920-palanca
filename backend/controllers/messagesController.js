@@ -1,6 +1,8 @@
 const asyncHandler = require('express-async-handler')
 const Message = require('../models/messageModel')
 var nodemailer = require('nodemailer')
+const path = require('path')
+const hbs = require('nodemailer-express-handlebars')
 const { google } = require('googleapis')
 
 const CLIENT_ID = process.env.CLIENT_ID
@@ -40,14 +42,26 @@ async function sendMail(accessToken, codeName, recipient, message){
             }
         })
 
+        const handlebarOptions = {
+            viewEngine: {
+                partialsDir: path.resolve(__dirname, '../views/'),
+                defaultLayout: false,
+            },
+            viewPath: path.resolve(__dirname, '../views/'),
+        };
+
+        transport.use('compile', hbs(handlebarOptions))
+
         const mailOptions =  {
             from: 'Rutherford Palanca <rutherfordpalanca@gmail.com> ',
             to: recipient,
             subject: 'Rutherford Palanca',
-            text: `Message from ${codeName}\n
-            ${message}`,
-            html: `<h3>from </h3><h2>${codeName}</h2>
-            <p>${message}</p>`
+            template: 'email',
+            context: {
+                codeName: codeName,
+                recipient: recipient,
+                message: message
+            }
         }
 
         const result = await transport.sendMail(mailOptions);

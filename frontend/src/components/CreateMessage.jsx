@@ -87,7 +87,7 @@ function CreateMessage({api_url}) {
 
     return (
         <div>
-            <form className = "create" autoComplete = "off" onSubmit={onSubmit} method="POST">
+            <form autoComplete = "off" onSubmit={onSubmit} method="POST">
                 <div className="section">
                     <div className = "field">
                         <label>Recipient</label>
