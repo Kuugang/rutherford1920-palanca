@@ -89,6 +89,7 @@ const getMessages = asyncHandler(async (req, res) => {
     const current_date = currentDate()
     if (d_date === current_date){
         const messages = await Message.find({})
+        console.log(messages)
         res.status(200).json(messages)
     }else{
         res.status(200)
