@@ -60,7 +60,7 @@ function CreateMessage({api_url}) {
         {"name" :"Orong, Marc", "email" : "marcorong.03@gmail.com "},
         {"name" :"Vergara, Jon", "email" : "Vergarajon30@gmail.com"},
         {"name" :"Villejo, Luigi", "email" : "villejolm@gmail.com"},
-        {"name" :"Zapanta, Franz", "email" : ""},
+        {"name" :"Zapanta, Franz", "email" : "franzzapanta1033@gmail.com"},
         {"name" :"Alicante, Justine", "email" : "mizukijustine@gmail.com"},
         {"name" :"Banawan, Treshia", "email" : "treshiamae07@gmail.com"},
         {"name" :"Dengal, Arnee", "email" : "arneedengal4@gmail.com "},
@@ -128,7 +128,6 @@ function CreateMessage({api_url}) {
                     onChange={onChange}
                     rows= '10'
                     cols='10' 
-                    maxLength="200"
                     />
                 <div>
                     <button className="submitBtn">Submit</button>
