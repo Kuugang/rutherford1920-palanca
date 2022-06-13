@@ -51,6 +51,7 @@ function CreateMessage({api_url}) {
         {"name" :"Amores, Carl", "email" : "nikkoboyamoress@gmail.com"},
         {"name" :"Bajo, Jake", "email" : "jakebajo21@gmail.com"},
         {"name" :"Bustaliño, Aidan", "email" : "SoheeGT0912@gmail.com"},
+        {"name" :"Cagalitan, Jhon", "email" : "jhoncagalitan24@gmail.com"},
         {"name" :"Elumba, Lemuel", "email" : "lemuelelumba0729@gmail.com"},
         {"name" :"Garcia, Rudz", "email" : "rudzcullin12@gmail.com"},
         {"name" :"Herrera, Germaine", "email" : "germaineconan24@gmail.com"},
