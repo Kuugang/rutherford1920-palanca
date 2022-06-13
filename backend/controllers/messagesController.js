@@ -29,7 +29,6 @@ const currentDate = () => {
 
 async function sendMail(accessToken, codeName, recipient, message){
     try{
-        
         const transport = nodemailer.createTransport({
             service: 'gmail',
             auth: {

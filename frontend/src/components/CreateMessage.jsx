@@ -144,7 +144,9 @@ function CreateMessage({api_url}) {
                 item ? 
                 <animated.div style = {style}>
                     <div className = "backdrop">
-                        <h3>Sending your message...</h3>
+                        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                        <h2>Sending Your Message</h2>
+                        <h3>If you have any questions or encounter issues, please contact Jake Hamoy Bajo</h3>
                     </div>
                 </animated.div>
                 : ''
