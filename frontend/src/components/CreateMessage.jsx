@@ -24,7 +24,7 @@ function CreateMessage({api_url}) {
         setIsSending(true)
         e.preventDefault()
 
-        if ((formData.message).trim().length > 0) {
+        if ((formData.message).trim().length > 0 && (formData.codeName).trim().length > 0) {
             try {
                 const resp = await fetch(api_url, {
                     method: "POST",
@@ -44,6 +44,10 @@ function CreateMessage({api_url}) {
             } catch (e) {
                 return e;
             }   
+        }else{
+            alert("Please fill all the fields")
+            setIsSending(false)
+            return
         }
     }
 
