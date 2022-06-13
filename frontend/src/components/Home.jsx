@@ -16,7 +16,9 @@ const Home = () => {
     return(
         <div className = "container">
             <div className = "form">
-                <h1>Rutherford's Palanca</h1>
+                <h1>Rutherford</h1>
+                <h2>19-20</h2>
+                <span><h2>P A L A N C A</h2></span>
                 <CreateMessage api_url = {api_url}/>
             </div>
         </div>

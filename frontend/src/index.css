@@ -41,7 +41,7 @@ h1, h2, h3, p{
   opacity: 1;  
 }
 
-.form h1{
+.form h1, h2{
   text-align: center;
 }
 
