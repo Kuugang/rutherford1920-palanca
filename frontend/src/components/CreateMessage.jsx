@@ -121,22 +121,22 @@ function CreateMessage({api_url}) {
                         onChange = {onChange} />
                     </div>
 
-                </div>  
-                    <label>Message</label>
-                    <textarea 
-                    type="text" 
-                    className = "text-field"
-                    required
-                    name = 'message'
-                    value = {message}
-                    placeholder = "Your message..."
-                    onChange={onChange}
-                    rows= '10'
-                    cols='10' 
-                    />
-                <div>
-                    <button className="submitBtn">Submit</button>
-                </div>
+                    </div>  
+                        <label>Message</label>
+                        <textarea 
+                        type="text" 
+                        className = "text-field"
+                        required
+                        name = 'message'
+                        value = {message}
+                        placeholder = "Your message..."
+                        onChange={onChange}
+                        rows= '10'
+                        cols='10' 
+                        />
+                    <div>
+                        <button className="submitBtn">Submit</button>
+                    </div>
             </form>
             
             <div>
