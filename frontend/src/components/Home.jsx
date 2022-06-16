@@ -26,6 +26,3 @@ const Home = () => {
 }
 
 export default Home
-
-
-https://prod.liveshare.vsengsaas.visualstudio.com/join?5E78E472AF84777A484D5246267CECF5EE5B
